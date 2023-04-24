@@ -1,0 +1,391 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    /* background:yellow; */
+}
+.main-dashboard{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    margin:0 auto;
+}
+.bug{
+    display:none;
+}
+.main-nav{
+    width:20%;
+    margin:0 auto;
+    background:#0072C6;
+    padding:20px;
+    position:sticky;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100vh;
+}
+.logo img{
+    width:30%;
+    border-radius:50px;
+}
+.logo-text{
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    width:90%;
+    margin:10px auto 0;
+    flex-direction:column;
+}
+.logo p, .logo span{
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    text-transform:capitalize;
+    color:#fff;
+    font-size:1.5em;
+}
+.logo span{
+    display:block;
+}
+.main-nav nav{
+    margin:10px auto;
+}
+.main-nav nav ul li{
+    list-style-type:none;
+}
+.main-nav nav ul li a{
+    display:block;
+    text-transform:capitalize;
+    text-decoration:none;
+    color:#ffffff;
+    padding:15px 10px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size:1.3em;
+}
+.dashboard-body{
+    width:80%;
+    /* background:red; */
+    padding:30px;
+}
+.dashboard{
+    /* background:brown; */
+    padding:10px;
+}
+.dashboard-name{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    margin:0 auto;
+    flex-wrap:wrap;
+}
+.dashboard-name p{
+    width:30%;
+    color:#0072C6;
+    font-family: 'Labrada', serif;
+    font-size:1.3em;
+    margin:10px auto 0;
+    text-transform:capitalize;
+}
+.shift,.move{
+    position:absolute;
+    display:none;
+    width:25%;
+    padding:20px;
+    margin:390px 300px 0;
+    background:#0072C6
+}
+.move{
+    margin:390px 680px 0;
+}
+.dashboard ul li{
+    padding:15px;
+    list-style:none;
+    text-transform:capitalize;
+    font-size:1em;
+    font-family: 'Labrada', serif;
+    color:#fff;
+    width:100%;
+}
+.medication-list{
+    /* background:yellow; */
+    /* padding:10px; */
+    display:flex;
+    align-items:start;
+    justify-content:flex-start;
+    width:100%;
+    /* margin:10px auto 0; */
+    flex-wrap:wrap;
+}
+.drug{
+    padding:20px;
+    width:30%;
+    background:#ffff;
+    margin:10px auto 0;
+    border:1px dotted #0072C6;
+    color:#0072C6;
+    transition:all 1s;
+}
+.drug p{
+    text-transform:capitalize;
+    margin:10px auto 0;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size:1.2em;
+}
+.drug:hover{
+    background:#0072C6;
+    color:#ffffff;
+}
+.bugger,.cancel{
+    display:none;
+}
+.main-prescription-management{
+    /* padding:20px; */
+    margin:20px auto 0;
+}
+.prescription-management-form{
+    display:flex;
+    /* align-items:center; */
+    justify-content:space-between;
+    width:100%;
+    /* background:red; */
+}
+.diagnosis-form{
+    width:100%;
+    border:none;
+    outline:none;
+    padding:10px 20px;
+}
+.diagnosis-link{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:50%;
+    margin:20px 0 0;
+}
+.diagnosis-link a{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    background:#0072C6;
+    padding:10px;
+    color:#fff;
+    width:40%;
+    text-align:center;
+    border-radius:10px;
+}
+.enter p ,.prescribe-text{
+    text-transform:capitalize;
+    font-size:1.2em;
+    color:#0072C6;
+    font-family: 'Labrada', serif;
+    padding:0 20px;
+}
+.prescription{
+    width:100%;
+    /* padding:20px; */
+}
+.prescribe-boxes{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    flex-wrap:wrap;
+}
+.prescribe-info{
+    width:48%;
+    margin:10px auto 0;
+    background:#0072C6;
+    padding:20px;
+}
+.prescribe-info p{
+    margin:10px auto 0;
+    color:#fff;
+    text-transform:capitalize;
+    font-size:0.9em;
+    font-family: 'Montserrat', sans-serif;
+}
+.prescribe-text{
+    padding:0 10px;
+}
+.bug-size{
+    display:none;
+}
+/* @media screen and (max-width:900px){
+    .main-dashboard{
+        background:#0072C6;
+        flex-direction:column;
+    }
+    .bug{
+        display:block;
+    }
+    .main-nav{
+        display:none;
+       
+        background:rgba(0,0,0,.5);
+        width:100%;
+    }
+    .bugger-container{
+        width:100%;
+        position:relative;
+        height:100vh;
+    }
+    .logo img{
+        width:20%;
+        padding:10px;
+        margin:10px 0 0;
+    }
+    .dashboard-name p{
+        color:#ffff;
+    }
+    .dashboard-body{
+        width:100%;
+        padding:10px;
+    }
+    .dashboard{
+        padding:10px;
+    }
+    .dashboard-name p{
+        width:100%;
+    }
+    .shift,.move{
+        background:#ffffff;
+        position:relative;
+        width:100%;
+        display:block;
+        margin:20px auto 0;
+        padding:10px;
+    }
+    .dashboard ul li{
+        color:#0072C6;
+        padding:15px;
+    }
+    .medication-list{
+        flex-direction:column;
+    }
+    .drug{
+        width:100%;
+        border:none;
+        padding:20px;
+    }
+    .main-prescription-management{
+        margin:10px auto 0;
+    }
+    .prescription-management-form{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .diagnosis-form{
+        padding:0;
+    }
+    .enter p ,.prescribe-text{
+        color:#fff;       
+        padding:0;
+        font-size:1.1em;
+        margin:20px 0 0;
+    }
+    .prescribe-text{
+        padding:0 5px;
+    }
+    .prescribe-boxes{
+        flex-direction:column;
+    }
+    .prescribe-info{
+        width:100%;
+        padding:10px;
+        background:#fff;
+    }
+    .prescribe-info p{
+        color:black;
+    }
+    .diagnosis-link{
+        margin:10px auto 0;
+        width:100%;
+        border:none;
+    }
+    .diagnosis-link a{
+        background:#fff;
+        color:black;
+        border-radius:0;
+    }
+} */
+
+@media screen and (max-width:900px){
+    .main-dashboard{
+        flex-direction:column;
+    }
+    .bug-size{
+        background:black;
+        width:100%;
+        padding:20px;
+        display:block;
+    }
+    .bug{
+        display:block;
+        width:10%;
+    }
+    .main-nav{
+        display:none;
+        width:100%;
+        height:120vh;
+        position: relative;
+        background:rgba(0,0,0,.8);
+    }
+    .logo img{
+        width:20%;
+        /* padding:10px; */
+    }
+    .dashboard-body{
+        width:100%;
+        padding:10px;
+    }
+    .dashboard{
+        padding:0 10px;
+    }
+    .dashboard-name{
+        align-items:flex-start;
+    }
+    .dashboard-name p{
+        width:50%;
+        font-size:1em;
+    }
+    .shift,.move{
+        background:#0072C6;
+        position:relative;
+        width:100%;
+        display:block;
+        margin:20px auto 0;
+        padding:10px;
+    }
+    .medication-list{
+        /* width:90%; */
+        margin:10px auto 0;
+        flex-direction:column;
+        padding:10px;
+    }
+    .drug{
+        width:100%;
+    }
+    .main-prescription-management{
+        margin:10px auto 0; 
+    }
+    .prescription-management-form{
+        flex-direction:column;
+    }
+    .diagnosis-form{
+        padding:0;
+    }
+    .prescribe-boxes{
+        flex-direction:column;
+    }
+    .prescribe-info{
+        width:100%;
+    }
+    .cancel{
+        width:15%;
+        padding:10px;
+    }
+}

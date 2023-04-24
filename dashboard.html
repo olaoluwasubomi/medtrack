@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="x-icon" href="img/logo-color.png">
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+</head>
+<body>
+    <section class="main-dashboard">
+        <div class="bug-size">
+            <img src="img/icon-hamburger.svg" alt="Hambugger" class="bug" id="bugg">
+        </div>
+            <div class="main-nav" id="open">
+                <div class="logo">
+                    <img src="img/cancel.png" alt="Cancel" class="cancel" id="remove">
+                    <img src="img/logo-color.png" alt="Logo">
+                    <div class="logo-text">
+                        <p>medtrack</p>
+                        <span>ID:56745</span>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#dash">dashboard</a></li>
+                        <li><a href="#medicine-list">medication list</a></li>
+                        <li><a href="#prescribe-section">prescription management</a></li>
+                        <li><a href="#">patient communication</a></li>
+                        <li><a href="#">help & support</a></li>
+                        <li><a href="#">profile</a></li>
+                        <li><a href="#">log out</a></li>
+                    </ul>
+                </nav>
+            </div> 
+        <div class="dashboard-body">
+            <div class="dashboard" id="dash">
+                <div class="dashboard-name">
+                    <p>name:oluwaseun badmus</p>
+                    <p>ID:79509</p>
+                    <p>sex:male</p>
+                    <p>age:35</p>
+                    <p id="show">medical history</p>
+                    <p id="show1">current medications</p>
+                    <ul id="hide" class="shift">
+                        <li>high blood pressure</li>
+                        <li>diabetes</li>
+                        <li>stroke</li>
+                        <li>cancer</li>
+                        <li>asthma</li>
+                    </ul>
+                    <ul id="hide1" class="move">
+                        <li>Lisinopril 10mg, once daily</li>
+                        <li>Metformin 1000mg, twice daily</li>
+                        <li>Albuterol inhaler, as needed</li>
+                        <li>Aspirin 81mg, once daily</li>
+                        <li>Aspirin 81mg, once daily</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="medication-list" id="medicine-list">
+                <div class="drug">
+                    <p>drug name:Paracetamol</p>
+                    <p>dosage: 1 pill per day</p>
+                    <p>route of administration:oral</p>
+                </div>
+                <div class="drug">
+                    <p>drug name:Paracetamol</p>
+                    <p>dosage: 1 pill per day</p>
+                    <p>route of administration:oral</p>
+                </div>
+                <div class="drug">
+                    <p>drug name:Paracetamol</p>
+                    <p>dosage: 1 pill per day</p>
+                    <p>route of administration:oral</p>
+                </div>
+                <div class="drug">
+                    <p>drug name:Paracetamol</p>
+                    <p>dosage: 1 pill per day</p>
+                    <p>route of administration:oral</p>
+                </div>
+                <div class="drug">
+                    <p>drug name:Paracetamol</p>
+                    <p>dosage: 1 pill per day</p>
+                    <p>route of administration:oral</p>
+                </div>
+                <div class="drug">
+                    <p>drug name:Paracetamol</p>
+                    <p>dosage: 1 pill per day</p>
+                    <p>route of administration:oral</p>
+                </div>
+            </div>
+
+            <div class="main-prescription-management" id="prescribe-section">
+                <div class="prescription-management-form">
+                    <div class="enter">
+                        <p>enter the diagnosis</p>
+                        <form class="diagnosis-form">
+                            <textarea name="diagnosis" id="diagnosis" cols="40" rows="20" required></textarea>
+                        </form>
+                    </div>
+                    <div class="prescription">
+                        <p class="prescribe-text">prescription</p>
+                        <div class="prescribe-boxes">
+                            <div class="prescribe-info">
+                                <p>medication: Metformin</p>
+                                <p>Dosage: 500mg</p>
+                                <p>Route: Oral</p>
+                                <p>Frequency: Twice daily</p>
+                                <p>Duration: 90 days</p>
+                                <p>Refills: 2</p>
+                            </div>
+                            <div class="prescribe-info">
+                                <p>medication: Metformin</p>
+                                <p>Dosage: 500mg</p>
+                                <p>Route: Oral</p>
+                                <p>Frequency: Twice daily</p>
+                                <p>Duration: 90 days</p>
+                                <p>Refills: 2</p>
+                            </div>
+                            <div class="prescribe-info">
+                                <p>medication: Metformin</p>
+                                <p>Dosage: 500mg</p>
+                                <p>Route: Oral</p>
+                                <p>Frequency: Twice daily</p>
+                                <p>Duration: 90 days</p>
+                                <p>Refills: 2</p>
+                            </div>
+                            <div class="prescribe-info">
+                                <p>medication: Metformin</p>
+                                <p>Dosage: 500mg</p>
+                                <p>Route: Oral</p>
+                                <p>Frequency: Twice daily</p>
+                                <p>Duration: 90 days</p>
+                                <p>Refills: 2</p>
+                            </div>
+                        </div>
+                        <div class="diagnosis-link">
+                            <a href="#" id="save">save</a>
+                            <a href="#" id="send">send</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+</html>
