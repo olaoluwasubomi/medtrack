@@ -356,7 +356,7 @@ body{
         background:#0072C6;
         position:relative;
         width:100%;
-        display:block;
+        /* display:block; */
         margin:20px auto 0;
         padding:10px;
     }
