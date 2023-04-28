@@ -2,12 +2,26 @@ var one = document.getElementById("bugg");
 var two = document.getElementById("remove");
 var three = document.getElementById("open");
 
-
+var twelve = document.getElementById("show");
+var thirteen = document.getElementById("show1");
+var fifteen = document.getElementById("hide");
 var four = document.getElementById("hide1");
 var six = document.getElementById("icon");
 var nine = document.getElementById("remove");
 var seven = document.getElementById("open");
 
+twelve.onclick = function(){
+    fifteen.style.display = "block";
+}
+twelve.ondblclick = function(){
+    fifteen.style.display = "none";
+}
+thirteen.onclick = function(){
+    four.style.display = "block";
+}
+thirteen. ondblclick = function(){
+    four.style.display = "none";
+}
 let pass = document.getElementById("save");
 let stops = document.getElementById("send");
 pass.onclick = function(){
